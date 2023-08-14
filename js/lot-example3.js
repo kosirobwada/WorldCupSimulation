@@ -1,7 +1,7 @@
-const vector1 = ['カタール', 'ブラジル', 'ベルギー', 'フランス', 'アルゼンチン', 'イングランド', 'スペイン', 'ポルトガル'];
-const vector2 = ['メキシコ', 'オランダ', 'デンマーク', 'ドイツ', 'ウルグアイ', 'スイス', 'アメリカ', 'クロアチア'];
-const vector3 = ['セネガル', 'イラン', '日本', 'モロッコ', 'セルビア', 'ポーランド', '韓国', 'チュニジア'];
-const vector4 = ['カメルーン', 'カナダ', 'エクアドル', 'サウジアラビア', 'ガーナ', 'オーストラリア', 'コスタリカ', 'ウェールズ'];
+const Pot1 = ['カタール', 'ブラジル', 'ベルギー', 'フランス', 'アルゼンチン', 'イングランド', 'スペイン', 'ポルトガル'];
+const Pot2 = ['メキシコ', 'オランダ', 'デンマーク', 'ドイツ', 'ウルグアイ', 'スイス', 'アメリカ', 'クロアチア'];
+const Pot3 = ['セネガル', 'イラン', '日本', 'モロッコ', 'セルビア', 'ポーランド', '韓国', 'チュニジア'];
+const Pot4 = ['カメルーン', 'カナダ', 'エクアドル', 'サウジアラビア', 'ガーナ', 'オーストラリア', 'コスタリカ', 'ウェールズ'];
 
 const countryElements = document.getElementById('lot');
 
@@ -12,10 +12,10 @@ function shuffleArray(array) {
     }
 }
   
-shuffleArray(vector1);
-shuffleArray(vector2);
-shuffleArray(vector3);
-shuffleArray(vector4);
+shuffleArray(Pot1);
+shuffleArray(Pot2);
+shuffleArray(Pot3);
+shuffleArray(Pot4);
 
 let list = '';
 list += '<table class="table">'
@@ -32,22 +32,22 @@ list += '<th>GroupH</th>';
 list += '</tr>';
 list += '<tr>';
 for (let i = 0; i < 8; i++) {
-  list += '<td>' + vector1[i] + '</td>';
+  list += '<td>' + Pot1[i] + '</td>';
 }
 list += '</tr>';
 list += '<tr>';
 for (let i = 0; i < 8; i++) {
-  list += '<td>' + vector2[i] + '</td>';
+  list += '<td>' + Pot2[i] + '</td>';
 }
 list += '</tr>';
 list += '<tr>';
 for (let i = 0; i < 8; i++) {
-  list += '<td>' + vector3[i] + '</td>';
+  list += '<td>' + Pot3[i] + '</td>';
 }
 list += '</tr>';
 list += '<tr>';
 for (let i = 0; i < 8; i++) {
-  list += '<td>' + vector4[i] + '</td>';
+  list += '<td>' + Pot4[i] + '</td>';
 }
 list += '</tr>';
 list += '</tbody>';
