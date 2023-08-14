@@ -18,21 +18,24 @@ shuffleArray(vector3);
 shuffleArray(vector4);
 
 let list = '';
-
+list += '<tr>';
 for (let i = 0; i < 8; i++) {
-  list += '<li>' + vector1[i] + '</li>';
+  list += '<td>' + vector1[i] + '</td>';
 }
-
+list += '</tr>';
+list += '<tr>';
 for (let i = 0; i < 8; i++) {
-  list += '<li>' + vector2[i] + '</li>';
+  list += '<td>' + vector2[i] + '</td>';
 }
-
+list += '</tr>';
+list += '<tr>';
 for (let i = 0; i < 8; i++) {
-  list += '<li>' + vector3[i] + '</li>';
+  list += '<td>' + vector3[i] + '</td>';
 }
-
+list += '</tr>';
+list += '<tr>';
 for (let i = 0; i < 8; i++) {
-  list += '<li>' + vector4[i] + '</li>';
+  list += '<td>' + vector4[i] + '</td>';
 }
-
-countryElements.innerHTML = '<ul>' + list + '</ul>';
+list += '</tr>';
+countryElements.innerHTML = '<table>' + list + '</table>';
